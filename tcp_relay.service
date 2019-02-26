@@ -1,0 +1,14 @@
+[Unit]
+Description=tcp relay service
+After=network.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+User=openhabian
+ExecStart=/home/openhabian/tcp_relay_server/tcp_relay_server
+
+[Install]
+WantedBy=multi-user.target
