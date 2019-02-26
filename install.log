@@ -1,0 +1,15 @@
+1) plain vanilla openhabian
+2) change host name eventually
+3) install serial binding
+4) tcp_relay as a service:
+	tcp_relay.service to /etc/systemd/system/
+5) socat serial bridge as a service:
+	socat...service to /etc/systemd/systm/
+	tty...service to /etc/default
+6) copy openhab config to config directory
+
+7) make serial bridge avaible in openhab:
+	sudo nano /etc/default/openhab2
+	Adjust the EXTRA_JAVA_OPTS accordingly
+	EXTRA_JAVA_OPTS="-Dgnu.io.rxtx.SerialPorts=/dev/ttyUSB0:/dev/ttyS0:/dev/ttyS2:/dev/ttyACM0:/dev/ttyAMA0:/dev/ttyNET0"
+
