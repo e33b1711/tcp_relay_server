@@ -2,7 +2,7 @@
 
 2) change host name eventually
 
-3) install serial binding
+3) install serial binding / astro binding / ntp / avm fritz!box binding 
 
 4) tcp_relay as a service:
 	tcp_relay.service to /etc/systemd/system/
