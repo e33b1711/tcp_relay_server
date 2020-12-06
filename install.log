@@ -2,7 +2,7 @@
 
 2) change host name eventually
 
-3) install serial binding / astro binding / ntp / avm fritz!box binding 
+3) install serial binding / astro binding / ntp / Fritzbox TR064 Binding / cloud connector / RRD4j Persistence
 
 4) tcp_relay as a service:
 	tcp_relay.service to /etc/systemd/system/
@@ -30,4 +30,10 @@
     
 8) install mosqito with:
     sudo openhabian-config (optional componenets => 20 mosquitto)
-
+    
+    
+9) my openhab secret / UUID
+    nano /var/lib/openhab2/openhabcloud/secret  
+    nano /var/lib/openhab2/uuid  
+    => auf myopenhab aktualisieren
+    
